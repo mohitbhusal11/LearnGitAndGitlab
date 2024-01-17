@@ -1,0 +1,7 @@
+git status
+git add [file name]
+git commit -m "message"
+git push
+git fetch
+git pull
+git checkout -b [new branch name] / git switch [branch name]
