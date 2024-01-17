@@ -1,0 +1,5 @@
+git branch [branch name]
+git checkout -b [branch name]
+git switch [branch name]
+git branch -d [branch name]
+git merge [branch name]
