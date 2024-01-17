@@ -1,0 +1,4 @@
+git fetch
+git merge
+git pull //this is the combination of git fetch and git merge
+git push
