@@ -1,0 +1,3 @@
+//this is the file where we config which file should not upload in the remote repo
+//this file is used to ignore files and folder before upload in the remote repo
+//this file is created by .gitignore
