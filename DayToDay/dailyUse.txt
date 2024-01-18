@@ -5,3 +5,4 @@ git push
 git fetch
 git pull
 git checkout -b [new branch name] / git switch [branch name]
+code for me
