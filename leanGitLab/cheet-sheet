@@ -1,0 +1,83 @@
+For the most part, GitHub and GitLab do use the same Git commands since they are both built on the Git version control system
+HERE YOU WILL GET DAY-TO-DAY GIT AND GITLAB COMMAND
+
+#Confirm Git is installed
+git --version
+
+#Configure Git
+git config --global user.name "name"
+git config --global user.email "you@example.com"
+#To check the configuration:
+git config --global --list / git config --list
+
+#Clone using SSH
+git clone git@gitlab.com:gitlab-tests/sample-project.git
+#Clone using HTTPS
+git clone https://gitlab.com/gitlab-tests/sample-project.git
+#To view this file
+cd sample-project
+
+#Convert a local directory into a repository
+git init
+
+#Add a remote
+git remote add origin git@github.com:username/repo.git
+
+#Add another URL to a remote
+git remote set-url --add <remote_name> <remote_url>
+
+#View your remote repo
+git remote -v
+
+#Download the latest changes in the project
+git pull <Remote> name-of-branch
+Example: git pull origin master
+
+#Check the Git history of a file
+git log --follow filename
+#Check full repo history
+git log / git log --graph / git log --oneline
+#Show the log of reference changes to HEAD
+git reflog
+
+#Create a branch
+git checkout -b name-of-branch
+#Switch to that branch (makes it active)
+git switch name-of-branch / git checkout name-of-branch
+
+#Merge one branch into another, creating a new commit
+git merge other-branch
+
+#View Differences
+git diff
+git diff first-branch..second-branch //View differences between two branches
+
+#View the files that have changes
+git status
+
+#Add and commit local changes
+git add .   //To stage all changes 
+git add "filename" //specific ones with
+
+#Confirm that the files have been added to staging:
+git status
+
+#To commit the staged files
+git commit -m "Commit message here"
+
+#As a shortcut, you can add all local changes to staging and commit them with one command
+git commit -a -m "your commit message"
+
+#Send changes to GitLab
+git push <remote> <name-of-branch>
+#Example: git push origin main
+
+#Delete all changes in the branch
+git reset --hard
+
+#Undo most recent commit
+git revert HEAD
+
+#Merge a branch with default branch
+git checkout <default-branch>
+git merge <feature-branch>
